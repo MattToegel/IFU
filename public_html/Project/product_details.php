@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/../../../partials/nav.php");
+require_once(__DIR__ . "/../../partials/nav.php");
 //do lookup last
 if ($product_id < 1) {
     flash("Missing product id in query params", "danger");
