@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/../../../partials/nav.php");
+require_once(__DIR__ . "/../../partials/nav.php");
 
 //TODO create lookup query and fetch results, set them to $results
 ?>
@@ -24,7 +24,7 @@ require_once(__DIR__ . "/../../../partials/nav.php");
                 <td>
                     <!-- other action buttons can go here-->
                     <a href="<?php echo get_url('product_details.php?id=') . se($record, "id"); ?>">Details</a>
-                    <form action="<?php echo get_url('cart.php'); ?>" method=" POST">
+                    <form action="<?php echo get_url('cart.php'); ?>" method="POST">
                         <input type="hidden" name="product_id" value="TODO GET ME" />
                         <input type="desired_quantity" value="1" />
                         <input type="submit" value="Add to Cart" class="btn btn-info" />
