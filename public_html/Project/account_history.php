@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/../../../partials/nav.php");
+require_once(__DIR__ . "/../../partials/nav.php");
 
 //TODO create lookup query and fetch results, set them to $results
 ?>
