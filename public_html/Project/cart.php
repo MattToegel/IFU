@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/../../../partials/nav.php");
+require_once(__DIR__ . "/../../partials/nav.php");
 is_logged_in(true);
 if (isset($_POST["add"])) {
     //insert or update item in user's cart
@@ -34,7 +34,7 @@ if (isset($_POST["delete_all"])) {
                 <?php endforeach; ?>
                 <td>
                     <!-- other action buttons can go here-->
-                    <form action="<?php echo get_url('order.php'); ?>" method=" POST">
+                    <form action="<?php echo get_url('order.php'); ?>" method="POST">
                         <input type="submit" value="Buy Me" class="btn btn-info" />
                     </form>
                     <!-- TODO only show this if the user is admin -->
